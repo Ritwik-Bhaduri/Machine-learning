@@ -8,6 +8,7 @@
 	    y2=rnorm(400,10,2)
 	    x=matrix(c(x1,x2,y1,y2),ncol=2,byrow=FALSE)
 	    initial_centers=matrix(c(8,10,20,10),byrow=T,nrow=2)
+	    #write.table(x, file="mymatrix.txt", row.names=FALSE, col.names=FALSE)	  #to print data in txt file
 
 
 MaxMinKmeans <- function(x, n,centers, Min=0,Max,pstep=pstep,maxp=maxp,Beta=Beta) {
